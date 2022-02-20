@@ -1,4 +1,5 @@
 colorscheme codedark
+let mapleader=" "
 set number relativenumber   " line numbers
 set wrap linebreak          " proper line wrap
 set tabstop=4               " number of columns occupied by a tab 
@@ -12,7 +13,7 @@ set mouse+=a                " mouse support
 " ------ KEYMAPS ------
 
 " quick quit
-nnoremap q :q<CR>
+nnoremap <leader>q :q<CR>
 
 " quick save
 nnoremap <C-s> :w<CR>
@@ -20,6 +21,7 @@ inoremap <C-s> <Esc>:w<CR>i
 vnoremap <C-s> :w<CR>
 " toggle wrap
 nnoremap <A-w> :set wrap!<CR>
+nnoremap <leader>w :set wrap!<CR>
 
 " switch tabs
 nnoremap <C-Left> :tabprevious<CR>
@@ -52,6 +54,9 @@ nnoremap B :NERDTreeToggle<CR>
 " FZF
 nnoremap E :Files<CR>
 
+" Goyo
+nnoremap <leader>r :Goyo<CR>
+
 " ------ Plugins ------
 call plug#begin()                   
     Plug 'tomasiser/vim-code-dark'      " Colorscheme
@@ -60,7 +65,13 @@ call plug#begin()
     Plug 'itchyny/lightline.vim'
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
+    Plug 'junegunn/goyo.vim'
 call plug#end()
+
+" ------ Plugins/Lightline
+let g:lightline = {
+      \ 'colorscheme': 'codedark',
+      \ }
 
 " ------ Plugins/NERDTree ------
 
