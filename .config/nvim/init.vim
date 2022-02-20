@@ -1,5 +1,7 @@
 colorscheme codedark
 let mapleader=" "
+
+set termguicolors           " use actual colors rather than terminal colorscheme ones
 set number relativenumber   " line numbers
 set wrap linebreak          " proper line wrap
 set tabstop=4               " number of columns occupied by a tab 
@@ -65,13 +67,19 @@ call plug#begin()
     Plug 'itchyny/lightline.vim'
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
-    Plug 'junegunn/goyo.vim'
+    Plug 'junegunn/goyo.vim'            " zen mode-esque thing
+    Plug 'norcalli/nvim-colorizer.lua'  " color highlighting
 call plug#end()
+
+" ------ Plugins/nvim-colorizer ------
+lua require'colorizer'.setup()
 
 " ------ Plugins/Lightline
 let g:lightline = {
       \ 'colorscheme': 'codedark',
       \ }
+
+set noshowmode    " hide the mode indicator in nvim's default statusbar
 
 " ------ Plugins/NERDTree ------
 

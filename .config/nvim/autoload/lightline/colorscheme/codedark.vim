@@ -1,8 +1,8 @@
 " =============================================================================
 " Filename: autoload/lightline/colorscheme/codedark.vim
-" Author: artanikin
+" Author: artanikin and nikhilmwarrier
 " License: MIT License
-" Last Change: 2019/12/05 12:26:00
+" Last Change: 2022/02/20 16:47:00
 " =============================================================================
 
 let s:term_red = 204
@@ -16,13 +16,13 @@ let s:term_grey = 236
 
 let s:p = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {}}
 
-let s:p.normal.left = [ [ '#262626', '#608B4E', s:term_black, s:term_green, 'bold' ], [ '#608B4E', '#262626', s:term_green, s:term_black ] ]
-let s:p.normal.right = [ [ '#262626', '#608B4E', s:term_black, s:term_green ], [ '#D4D4D4', '#3C3C3C', s:term_white, s:term_grey ], [ '#608B4E', '#262626', s:term_green, s:term_black ] ]
-let s:p.inactive.right = [ [ '#262626', '#569CD6', s:term_black, s:term_blue], [ '#D4D4D4', '#3C3C3C', s:term_white, s:term_grey ] ]
+let s:p.normal.left = [ [ '#262626', '#569CD6', s:term_black, s:term_green, 'bold' ], [ '#ffffff', '#262626', s:term_green, s:term_black ] ]
+let s:p.normal.right = [ [ '#262626', '#569CD6', s:term_black, s:term_green ], [ '#D4D4D4', '#3C3C3C', s:term_white, s:term_grey ], [ '#D4D4D4', '#262626', s:term_green, s:term_black ] ]
+let s:p.inactive.right = [ [ '#262626', '#608B4E', s:term_black, s:term_blue], [ '#D4D4D4', '#3C3C3C', s:term_white, s:term_grey ] ]
 let s:p.inactive.left = s:p.inactive.right[1:]
 " her
-let s:p.insert.left = [ [ '#262626', '#569CD6', s:term_black, s:term_blue, 'bold' ], [ '#569CD6', '#262626', s:term_blue, s:term_black ] ]
-let s:p.insert.right = [ [ '#262626', '#569CD6', s:term_black, s:term_blue ], [ '#D4D4D4', '#3C3C3C', s:term_white, s:term_grey ], [ '#569CD6', '#262626', s:term_blue, s:term_black ] ]
+let s:p.insert.left = [ [ '#262626', '#608B4E', s:term_black, s:term_blue, 'bold' ], [ '#569CD6', '#262626', s:term_blue, s:term_black ] ]
+let s:p.insert.right = [ [ '#262626', '#608B4E', s:term_black, s:term_blue ], [ '#D4D4D4', '#3C3C3C', s:term_white, s:term_grey ], [ '#569CD6', '#262626', s:term_blue, s:term_black ] ]
 let s:p.replace.left = [ [ '#262626', '#D16969', s:term_black, s:term_red, 'bold' ], [ '#D16969', '#262626', s:term_red, s:term_black ] ]
 let s:p.replace.right = [ [ '#262626', '#D16969', s:term_black, s:term_red, 'bold' ], s:p.normal.right[1], [ '#D16969', '#262626', s:term_red, s:term_black ] ]
 let s:p.visual.left = [ [ '#262626', '#C586C0', s:term_black, s:term_purple, 'bold' ], [ '#C586C0', '#262626', s:term_purple, s:term_black ] ]
