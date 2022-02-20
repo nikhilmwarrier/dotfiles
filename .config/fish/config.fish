@@ -6,3 +6,4 @@ chafa ~/storage/downloads/Rickroll.png
 echo -e "\"Yes, do as I say\"\n\t~Linus Sebastian c.2022"
 set fish_greeting # disable "Welcome to Fish thingie
 alias v nvim
+alias cdl 'cd (llama)'
