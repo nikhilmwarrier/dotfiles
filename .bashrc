@@ -6,7 +6,8 @@ alias mkd="mkdir -pv"           # create parent directories + provide feedback
 alias ls="ls --group-directories-first -h"
 alias la="ls --group-directories-first -lAh"
 alias rebash="source ~/.bashrc"
-
+alias rm="rm -i"                # confirm before delete
+alias mv="mv -i"                # confirm before move
 # ------ END ALIASES ------
 
 # ------ CUSTOM PROMPT ------
