@@ -1,3 +1,8 @@
+# ------ Welcome message ------
+echo -e "Yes, do as I say\n\t~ Linus Sebasitian c.2022"
+# ------ End Welcome message ------
+
+
 # ------ ALIASES ------
 
 alias v=nvim
