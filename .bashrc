@@ -2,7 +2,6 @@
 echo -e "Yes, do as I say\n\t~ Linus Sebasitian c.2022"
 # ------ End Welcome message ------
 
-
 # ------ ALIASES ------
 
 alias v=nvim
@@ -14,6 +13,10 @@ alias rebash="source ~/.bashrc"
 alias rm="rm -i"                # confirm before delete
 alias mv="mv -i"                # confirm before move
 # ------ END ALIASES ------
+
+# ------ VARIABLES ------
+export PATH="$PATH:$HOME/scripts"
+# ------ END VARIABLES ------
 
 # ------ CUSTOM PROMPT ------
 # get current branch in git repo
