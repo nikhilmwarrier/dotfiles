@@ -13,4 +13,4 @@ set shiftwidth=4            " width for autoindents
 set autoindent              " indent a new line the same amount as the line just typed
 set mouse+=a                " mouse support
 set nocompatible            " disable vi compibility mode
-
+set undofile                " retain undo history between file openings
