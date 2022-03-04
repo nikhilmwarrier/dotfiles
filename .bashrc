@@ -2,6 +2,9 @@
 echo -e "Yes, do as I say\n\t~ Linus Sebasitian c.2022"
 # ------ End Welcome message ------
 
+# AUTORUN
+~/scripts/autorun
+
 # ------ ALIASES ------
 
 alias v=nvim
