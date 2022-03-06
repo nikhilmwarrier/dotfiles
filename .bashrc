@@ -14,8 +14,10 @@ bind -m vi-insert "\C-l":clear-screen
 alias v=nvim
 alias cdl="cd \$(llama)"        # open with llama file manager 
 alias mkd="mkdir -pv"           # create parent directories + provide feedback
-alias ls="ls --group-directories-first -h"
-alias la="ls --group-directories-first -lAh"
+# alias ls="ls --group-directories-first -h"
+# alias la="ls --group-directories-first -lAh"
+alias ls="exa --icons --group-directories-first -s=name -ah"
+alias la="exa --icons --group-directories-first -s=name -lah"
 alias rebash="source ~/.bashrc"
 alias rm="rm -i"                # confirm before delete
 alias mv="mv -i"                # confirm before move
