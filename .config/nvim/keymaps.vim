@@ -7,6 +7,11 @@ nnoremap <leader>q :q<CR>
 nnoremap <C-s> :w<CR>
 inoremap <C-s> <Esc>:w<CR>i
 vnoremap <C-s> :w<CR>
+
+" insert empty lines
+nnoremap <leader>o o<Esc>
+nnoremap <leader>O O<Esc>
+
 " toggle wrap
 nnoremap <A-w> :set wrap!<CR>
 nnoremap <leader>w :set wrap!<CR>
