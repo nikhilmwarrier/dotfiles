@@ -7,7 +7,15 @@ lua require'colorizer'.setup()
 " ------ Plugins/Lightline
 let g:lightline = {
       \ 'colorscheme': colorscheme,
+      \ 'tab_component_function': {
+        \   'tabnum': 'LightlineWebDevIcons',
+      \ },
       \ }
+" show icons in tabbar
+function! LightlineWebDevIcons(n)
+  let l:bufnr = tabpagebuflist(a:n)[tabpagewinnr(a:n) - 1]
+  return WebDevIconsGetFileTypeSymbol(bufname(l:bufnr))
+endfunction
 
 set noshowmode    " hide the mode indicator in nvim's default statusbar
 
