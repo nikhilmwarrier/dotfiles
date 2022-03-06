@@ -2,6 +2,10 @@
 echo -e "Yes, do as I say\n\t~ Linus Sebasitian c.2022"
 # ------ End Welcome message ------
 
+# vi mode
+set -o vi
+bind -m vi-insert "\C-l":clear-screen
+
 # AUTORUN
 ~/scripts/autorun
 
