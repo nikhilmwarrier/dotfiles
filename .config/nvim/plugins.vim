@@ -10,5 +10,6 @@ call plug#begin()
     Plug 'junegunn/fzf.vim'
     Plug 'junegunn/goyo.vim'            " zen mode-esque thing
     Plug 'norcalli/nvim-colorizer.lua'  " color highlighting
+    Plug 'windwp/nvim-autopairs'          " brackets pairing
 call plug#end()
 " ------ /Plugins ------

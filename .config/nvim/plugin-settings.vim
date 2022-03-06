@@ -1,4 +1,7 @@
 " ------ Plugins/nvim-colorizer ------
+lua require('nvim-autopairs').setup{}
+
+" ------ Plugins/nvim-colorizer ------
 lua require'colorizer'.setup()
 
 " ------ Plugins/Lightline
