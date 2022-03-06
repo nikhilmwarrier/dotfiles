@@ -25,6 +25,7 @@ alias mv="mv -i"                # confirm before move
 
 # ------ VARIABLES ------
 export PATH="$PATH:$HOME/scripts"
+export EDITOR="nvim"
 # ------ END VARIABLES ------
 
 # ------ CUSTOM PROMPT ------
@@ -75,5 +76,5 @@ function parse_git_dirty {
 	fi
 }
 
-export PS1="\[\e[1;36m\]\w\[\e[m\] \[\e[1;35m\]\`parse_git_branch\`\[\e[m\]: \[\e[1;32m\]\\$\[\e[m\] "
+export PS1="\[\e[1;36m\]\w\[\e[m\] \[\e[1;35m\]\`parse_git_branch\`\[\e[m\]: \[\e[1;32m\]\[\e[m\] "
 # ------ END CUSTOM PROMPT ------
