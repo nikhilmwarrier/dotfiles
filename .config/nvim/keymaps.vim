@@ -42,7 +42,7 @@ vnoremap <A-k> :m '<-2<CR>gv=gv
 " :inoremap ii <Esc>
 
 " NERDTree
-nnoremap B :NERDTreeToggle<CR>
+nnoremap <leader>b :NERDTreeToggle<CR>
 
 " FZF
 nnoremap E :Files<CR>
