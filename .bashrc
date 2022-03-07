@@ -10,7 +10,7 @@ bind -m vi-insert "\C-l":clear-screen
 ~/scripts/autorun
 
 # ------ ALIASES ------
-
+alias cl=clear
 alias v=nvim
 alias cdl="cd \$(llama)"        # open with llama file manager 
 alias mkd="mkdir -pv"           # create parent directories + provide feedback
