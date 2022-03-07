@@ -5,7 +5,7 @@ let mapleader=" "
 
 set termguicolors           " use actual colors rather than terminal colorscheme ones
 set number relativenumber   " line numbers
-set linebreak               " for proper line wrap
+set linebreak nowrap               " for proper line wrap
 set tabstop=4               " number of columns occupied by a tab 
 set softtabstop=4           " see multiple spaces as tabstops so <BS> does the right thing
 set expandtab               " converts tabs to white space
