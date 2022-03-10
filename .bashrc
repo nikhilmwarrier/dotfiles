@@ -2,6 +2,7 @@
 echo -e "\"Yes, do as I say\"\n\t~ Linus Sebasitian c.2022"
 # ------ End Welcome message ------
 
+
 # vi mode
 set -o vi
 bind -m vi-insert "\C-l":clear-screen
@@ -21,12 +22,15 @@ alias la="exa --icons --group-directories-first -s=name -lah"
 alias rebash="source ~/.bashrc"
 alias rm="rm -i"                # confirm before delete
 alias mv="mv -i"                # confirm before move
+alias yeet="mv -t $HOME/.trash" # yeet
 # ------ END ALIASES ------
 
 # ------ VARIABLES ------
-export PATH="$PATH:$HOME/scripts"
+export PATH="$PATH:$HOME/.local/bin:$HOME/scripts"
 export EDITOR="nvim"
 # ------ END VARIABLES ------
+
+eval "$(thefuck --alias)"       # set f*** alias
 
 # ------ CUSTOM PROMPT ------
 # get current branch in git repo
@@ -78,3 +82,4 @@ function parse_git_dirty {
 
 export PS1="\[\e[1;36m\]\w\[\e[m\] \[\e[1;35m\]\`parse_git_branch\`\[\e[m\]: \[\e[1;32m\]\[\e[m\] "
 # ------ END CUSTOM PROMPT ------
+
