@@ -12,5 +12,6 @@ call plug#begin()
     Plug 'norcalli/nvim-colorizer.lua'  " color highlighting
     Plug 'windwp/nvim-autopairs'        " brackets pairing
     Plug 'ryanoasis/vim-devicons'       " snazzy icons
+    Plug 'mhinz/vim-startify'           " startup screen
 call plug#end()
 " ------ /Plugins ------

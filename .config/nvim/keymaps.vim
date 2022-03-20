@@ -20,6 +20,9 @@ nnoremap <leader>w :set wrap!<CR>
 nnoremap <C-Left> :tabprevious<CR>
 nnoremap <C-Right> :tabnext<CR>
 
+" open current split in a tab
+nnoremap <leader>t <C-w>T
+
 " move line or visually selected block - alt+j/k
 inoremap <A-j> <Esc>:m .+1<CR>==gi
 inoremap <A-k> <Esc>:m .-2<CR>==gi
