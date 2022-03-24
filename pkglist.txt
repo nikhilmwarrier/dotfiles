@@ -1,1 +1,1 @@
-neovim llama exa
+neovim llama exa cowsay

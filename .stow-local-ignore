@@ -20,3 +20,4 @@ _darcs
 ^/COPYING
 
 pkglist.txt
+install_py_pkgs.sh
