@@ -1,5 +1,6 @@
 # ------ Welcome message ------
-echo -e "\"Yes, do as I say\"\n\t~ Linus Sebastian c.2022"
+# echo -e "\"Yes, do as I say\"\n\t~ Linus Sebastian c.2022"
+fortune | cowsay
 # ------ End Welcome message ------
 
 
