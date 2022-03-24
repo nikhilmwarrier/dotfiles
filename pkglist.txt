@@ -1,1 +1,1 @@
-neovim llama exa cowsay
+neovim llama exa cowsay fortune
