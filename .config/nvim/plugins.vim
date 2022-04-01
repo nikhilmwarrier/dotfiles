@@ -12,6 +12,7 @@ call plug#begin()
     Plug 'norcalli/nvim-colorizer.lua'  " color highlighting
     Plug 'windwp/nvim-autopairs'        " brackets pairing
     Plug 'ryanoasis/vim-devicons'       " snazzy icons
-    Plug 'mhinz/vim-startify'           " startup screen
+    " Plug 'mhinz/vim-startify'           " startup screen
+    Plug 'glepnir/dashboard-nvim'       " dash
 call plug#end()
 " ------ /Plugins ------

@@ -4,6 +4,26 @@ lua require('nvim-autopairs').setup{}
 " ------ Plugins/nvim-colorizer ------
 lua require'colorizer'.setup()
 
+" ------ Plugins/dashboard------
+let g:dashboard_default_executive ='fzf'
+
+
+let g:dashboard_custom_header =[
+            \'⠀⠀⠀⣶⣶⣶⣶⡆⠀⠀⠀⠀⠀⠀ ',
+            \'⠀⠀⠀⠛⠛⢻⣿⣿⡀⠀⠀⠀⠀⠀⠀',
+            \'⠀⠀⠀⠀⠀⢀⣿⣿⣷⠀⠀⠀⠀⠀⠀',
+            \'⠀⠀⠀⠀⢀⣾⣿⣿⣿⣇⠀⠀⠀⠀⠀',
+            \'⠀⠀⠀⢠⣿⣿⡟⢹⣿⣿⡆⠀⠀⠀⠀',
+            \'⠀⠀⣰⣿⣿⠏⠀⠀⢻⣿⣿⡄⠀⠀⠀',
+            \'⠀⣴⣿⡿⠃⠀⠀⠀⠈⢿⣿⣷⣤⣤⡆',
+            \'⠾⠿⠿⠁⠀⠀⠀⠀⠀⠘⣿⣿⡿⠿⠛',
+    \]
+
+
+let g:dashboard_custom_footer =[
+        \'"violence starts with vi"'
+    \]
+
 " ------ Plugins/Lightline
 let g:lightline = {
       \ 'colorscheme': colorscheme,
